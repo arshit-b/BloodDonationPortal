@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js">
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blood and Organ Donation Portal</title>
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
+
+  <script src="//use.edgefonts.net/bebas-neue.js"></script>
+
+  <!-- Custom Fonts & Icons -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/icomoon-social.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <script src="js2/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+
+  <style type="text/css">
+    .navbar-default {
+      background-color: #dc0303;
+      border-color: #dc0000;
+    }
+
+    .navbar-default .navbar-brand {
+      color: #fafeff;
+    }
+
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+      color: #fefefe;
+    }
+
+    .navbar-default .navbar-text {
+      color: #fafeff;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      color: #fafeff;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:focus {
+      color: #fefefe;
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:hover,
+    .navbar-default .navbar-nav>.active>a:focus {
+      color: #fefefe;
+      background-color: #dc0000;
+    }
+
+    .navbar-default .navbar-nav>.open>a,
+    .navbar-default .navbar-nav>.open>a:hover,
+    .navbar-default .navbar-nav>.open>a:focus {
+      color: #fefefe;
+      background-color: #dc0000;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: #dc0000;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">Blood and Organ Donation Portal</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="donorlogin.php">Donor Portal</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff Portal
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="doclogin.php">Doctor Portal</a></li>
+              <li><a href="adminlogin.php">Admin</a></li>
+
+            </ul>
+          </li>
+
+          <li><a href="contact.php">Contact us</a></li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <!-- Javascripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js2/jquery.js"></script>
+  <script src="js2/jquery-scrolltofixed-min.js"></script>
+  <script src="js2/jquery.vegas.js"></script>
+  <script src="js2/jquery.mixitup.min.js"></script>
+  <script src="js2/jquery.validate.min.js"></script>
+  <script src="js2/script.js"></script>
+  <script src="js2/bootstrap.js"></script>
+
+  <!-- Slideshow Background  -->
+  <script>
+    $.vegas('slideshow', {
+      delay: 3000,
+      backgrounds: [
+        { src: './static/images/pic.jpg', fade: 200 },
+        { src: './static/images/pic1.jpg', fade: 200 },
+        { src: './static/images/org.jpg', fade: 200 },
+      ]
+    })('overlay', {
+      src: './img/overlay.png'
+    });
+
+  </script>
+  <!-- /Slideshow Background -->
+
+  <!-- Mixitup : Grid -->
+  <script>
+    $(function () {
+      $('#Grid').mixitup();
+    });
+  </script>
+  <!-- /Mixitup : Grid -->
+
+  <!-- Custom JavaScript for Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
+  <script>
+    $(function () {
+      $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <!-- Navbar -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#nav').scrollToFixed();
+    });
+  </script>
+  <!-- /Navbar-->
+
+</body>
+
+</html>
